@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section id="profile" class="bg-gray-dark-2 overflow-hidden py-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-7 col-profile" data-mh="mh-col-profile">
+                <div class="pr-lg-4">
+                    <h3 class="font-alt font-w-600 letter-spacing-2 title-extra-large text-uppercase text-white">
+                        Hello, My Name is {{ firstname}}!</h3>
+                    <p class="mt-4 text-large text-white">{{firstname }} {{lastname}}, {{age}} years young, born & grew
+                        up in {{city}}
+                        , {{ country}}.
+                    </p>
+                    <span class="bg-base-color mt-4 sep-line-medium-thick"></span>
+                    <p class="mt-4 text-gray text-large">I currently work as a {{job1}}, {{job2}} and also {{job3}}.
+                    </p>
+                    <p class="mt-3 text-gray text-large">My fields of interest are {{interest1}}, {{interest2}},
+                        {{interest3}}, also {{interest4}} and recently {{interest5}}.
+                    </p>
+                    <div class="row pt-5">
+                        <div class="col-md-6">
+                            <span
+                                class="d-block font-alt letter-spacing-2 text-extra-large text-uppercase text-white">Contact
+                                Details:</span>
+                            <ul class="list-unstyled mt-2 text-gray text-large">
+                                <li>{{firstname}} {{lastname}}</li>
+                                <li class="pt-2">{{number}} {{street}}, {{city}}, {{country}}</li>
+                                <li class="pt-2">{{phone}}</li>
+                                <li class="pt-2">Email: {{email}}</li>
+                                <li class="pt-2">{{site}}</li>
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-5 d-none d-xl-block position-relative" data-mh="mh-col-profile">
+                <img src="{% static 'images/profile_picture_1.jpg' %}" alt=""
+                    class="img-fluid left-0 position-absolute top-0 w-100" />
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+{% endblock %}

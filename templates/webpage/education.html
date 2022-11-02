@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section id="services" class="bg-gray-dark-2">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h3 class="font-alt font-w-600 letter-spacing-2 title-extra-large text-uppercase text-white">College
+                    education</h3>
+                <p class="mt-3 text-gray text-extra-large"><i>Here you can see my college education and thesis</i></p>
+                <span class="bg-base-color mt-4 mx-auto sep-line-medium-thick-long"></span>
+            </div>
+
+        </div>
+
+        <div class="row mt-5 pt-5">
+            <div class="col-lg-4 bg-gray-dark-3 border-md-0 border-bottom border-right border-gray-2"
+                data-mh="mh-col-services">
+                <div class="px-lg-3 py-5 py-lg-4 text-center text-lg-left">
+                    <i class="icon-Chess text-base-color title-extra-large"></i>
+                    <span
+                        class="d-block font-alt letter-spacing-2 mt-2 text-extra-large text-uppercase text-white">{{Bsc}}</span>
+                    <span class="bg-base-color ml-lg-0 mt-3 mx-auto sep-line-thick"></span>
+                    <p class="m-0 mt-3 text-gray text-medium">{{Bsc_Univ}},{{Bsc_year}}</p>
+                    <p class="m-0 mt-3 text-gray text-medium">Thesis: {{Bsc_Thesis}}</p>
+                </div>
+
+            </div>
+            <br>
+
+            <div class="col-lg-4 border-md-0 border-bottom border-right border-gray-2" data-mh="mh-col-services">
+                <div class="px-lg-3 py-5 py-lg-4 text-center text-lg-left">
+                    <i class="icon-Leafs-2 text-base-color title-extra-large"></i>
+                    <span
+                        class="d-block font-alt letter-spacing-2 mt-2 text-extra-large text-uppercase text-white">{{Msc}}</span>
+                    <span class="bg-base-color ml-lg-0 mt-3 mx-auto sep-line-thick"></span>
+                    <p class="m-0 mt-3 text-gray text-medium">{{Msc_Univ}},{{Msc_year}}</p>
+                    <p class="m-0 mt-3 text-gray text-medium">Thesis: {{Msc_Thesis}}</p>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
+
+</section>
+{% endblock %}

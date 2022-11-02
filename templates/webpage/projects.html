@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<section id="portfolio" class="bg-gray-dark pb-0">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h3 class="font-alt font-w-600 letter-spacing-2 title-extra-large text-uppercase text-white">My
+                    Latest Work</h3>
+
+                <span class="bg-base-color mt-4 mx-auto sep-line-medium-thick-long"></span>
+            </div>
+
+        </div>
+
+    </div>
+    <div>
+        <br>
+        <p class="mt-3 text-gray text-extra-large" style="text-align:center"><b><i>{{pr1}}</i></b></p>
+        <br>
+        <p class="mt-3 text-gray text-extra-large" style="text-align:center"><b><i>{{pr2}}</i></b></p>
+        <br>
+        <p class="mt-3 text-gray text-extra-large" style="text-align:center"><b><i>{{pr3}}</i></b></p>
+        <br>
+        <p class="mt-3 text-gray text-extra-large" style="text-align:center"><b><i>{{pr4}}</i></b></p>
+        <br>
+    </div>
+
+</section>
+{% endblock %}
